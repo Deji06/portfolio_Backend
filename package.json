@@ -2,11 +2,11 @@
   "name": "portfoliobackend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "start": "node app.js"
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",
