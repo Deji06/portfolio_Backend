@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express'
 import dotenv from 'dotenv'
-import Contact from '../src/controllers/Contact' 
+import Contact from './controllers/Contact' 
 dotenv.config()
 const app = express()
 
