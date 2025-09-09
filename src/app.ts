@@ -1,12 +1,22 @@
 import express, {Request, Response} from 'express'
 import dotenv from 'dotenv'
 import Contact from './controllers/Contact' 
+import cors from 'cors'
 dotenv.config()
 const app = express()
 
 
 app.use(express.json())
-
+app.use(
+  cors({
+    origin: [
+      'http://localhost:5173',
+      'https://myportfolio-dejis-projects-06c81f30.vercel.app/',
+    ],
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  }),
+);
 app.use('/api/v1', Contact) 
 
 //routes
