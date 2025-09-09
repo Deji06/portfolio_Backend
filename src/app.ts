@@ -1,14 +1,13 @@
 import express, {Request, Response} from 'express'
 import dotenv from 'dotenv'
-import Contact from '../src/controllers/Contact.js'
-
+import Contact from '../src/controllers/Contact' 
 dotenv.config()
 const app = express()
 
 
 app.use(express.json())
 
-app.use('/api/v1', Contact)
+app.use('/api/v1', Contact) 
 
 //routes
 app.get('/', (req:Request, res:Response)=> {
