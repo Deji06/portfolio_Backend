@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    // "module": "commonjs",
-    "module": "node16", 
-    "moduleResolution": "node16", 
+    "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
@@ -14,7 +12,3 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
-
-
-
-
