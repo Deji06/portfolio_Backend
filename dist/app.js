@@ -13,9 +13,9 @@ app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     origin: [
         'http://localhost:5173',
-        'https://myportfolio-dejis-projects-06c81f30.vercel.app/',
-        'https://dejiportfolio.vercel.app/',
-        'https://deji-codes.vercel.app/',
+        'https://myportfolio-dejis-projects-06c81f30.vercel.app',
+        'https://dejiportfolio.vercel.app',
+        'https://deji-codes.vercel.app',
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
